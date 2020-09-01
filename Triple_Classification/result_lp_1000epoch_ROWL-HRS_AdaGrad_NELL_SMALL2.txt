@@ -1,0 +1,8 @@
+tc_acc_FAST.append(0.739759403075986)
+tc_prec_FAST.append(0.847148736037625)
+tc_rec_FAST.append(0.58511826210537)
+tc_fpr_FAST.append(0.20284766920226252)
+tc_acc_OWL.append(0.7434140398964519)
+tc_prec_OWL.append(0.778513356562137)
+tc_rec_OWL.append(0.6804385341589686)
+tc_fpr_OWL.append(0.37725024727992085)

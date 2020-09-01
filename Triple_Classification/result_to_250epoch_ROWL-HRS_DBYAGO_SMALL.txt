@@ -1,0 +1,8 @@
+isa_acc_FAST.append(0.93638671875)
+isa_prec_FAST.append(0.9842775820005422)
+isa_rec_FAST.append(0.698067865038931)
+isa_fpr_FAST.append(0.035615597175314706)
+isa_acc_OWL.append(0.9528515625)
+isa_prec_OWL.append(0.9663747810858143)
+isa_rec_OWL.append(0.7956358742670383)
+isa_fpr_OWL.append(0.11930405965202982)
