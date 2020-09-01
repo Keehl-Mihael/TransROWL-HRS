@@ -1,0 +1,4 @@
+<http://dbpedia.org/ontology/club>	<http://dbpedia.org/ontology/team>
+<http://dbpedia.org/ontology/jureLanguage>	<http://dbpedia.org/ontology/language>
+<http://dbpedia.org/ontology/deFactoLanguage>	<http://dbpedia.org/ontology/language>
+<http://dbpedia.org/ontology/area>	<http://dbpedia.org/ontology/landArea>
