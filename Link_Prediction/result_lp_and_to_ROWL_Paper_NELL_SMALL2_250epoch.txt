@@ -1,0 +1,8 @@
+lp_rank.append(10245)
+lp_tot.append(0.242997)
+lp_rank_fil.append(9882.64)
+lp_tot_fil.append(0.322663)
+cls_lp_rank.append(2714.23)
+cls_lp_tot.append(0.784013)
+cls_lp_rank_fil.append(2547.79)
+cls_lp_tot_fil.append(0.787544)
