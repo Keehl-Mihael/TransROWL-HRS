@@ -13,14 +13,10 @@ This repository is related to my thesis' work, which has the purpose to verify t
   
  The models developed, particularly <em>TransROWL</em> and <em>TransROWL-HRS AdaGrad</em>, achieve better performance in Link Prediction and Triple Classification:
   
-  ![](Graphs_Charts/Screenshot_20200830_182852.png)
-  ![](Graphs_Charts/Screenshot_20200830_183114.png)
-  ![](Graphs_Charts/Screenshot_20200830_183147.png)
-  ![](Graphs_Charts/Screenshot_20200830_183220.png)
-  ![](Graphs_Charts/Screenshot_20200830_183312.png)
-  ![](Graphs_Charts/Screenshot_20200830_183333.png)
-  ![](Graphs_Charts/Screenshot_20200830_183357.png)
-  ![](Graphs_Charts/Screenshot_20200830_183415.png)
+  ![](Graphs_Charts/Screenshot_20200901_161256.png)
+  ![](Graphs_Charts/Screenshot_20200901_161241.png)
+  ![](Graphs_Charts/Screenshot_20200901_160227.png)
+  ![](Graphs_Charts/Screenshot_20200901_160132.png)
   
   The JavaReasoner folder contains a java program which is able to generate,given a dataset, all the files necessary to run the tests.
   The JavaReasoner can be executed with those arguments:
