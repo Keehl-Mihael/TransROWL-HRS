@@ -19,6 +19,7 @@ This repository is related to my thesis' work, which has the purpose to verify t
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
   
   The JavaReasoner folder contains a java program which is able to generate,using a reasoner on a given dataset, all the files necessary to run the tests.
+  The JavaReasoner makes use of the Apache Jena Framework, more informations at https://jena.apache.org/getting_started/index.html .
   The JavaReasoner can be executed with those arguments:
   ```
      args[0] : ontology schema file
