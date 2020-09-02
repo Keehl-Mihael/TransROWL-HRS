@@ -13,7 +13,9 @@ This repository is related to my thesis' work, which has the purpose to verify t
   
  The models developed, particularly <em>TransROWL</em> and <em>TransROWL-HRS AdaGrad</em>, achieve better performance in Link Prediction and Triple Classification:
   
+  - DBpedia100K
   ![](Graphs_Charts/Screenshot_20200901_161256.png)
+  - DBpedia15K
   ![](Graphs_Charts/Screenshot_20200901_161241.png)
   ![](Graphs_Charts/Screenshot_20200901_160227.png)
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
