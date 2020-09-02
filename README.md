@@ -18,7 +18,7 @@ This repository is related to my thesis' work, which has the purpose to verify t
   ![](Graphs_Charts/Screenshot_20200901_160227.png)
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
   
-  The JavaReasoner folder contains a java program which is able to generate,given a dataset, all the files necessary to run the tests.
+  The JavaReasoner folder contains a java program which is able to generate,using a reasoner on a given dataset, all the files necessary to run the tests.
   The JavaReasoner can be executed with those arguments:
   ```
      args[0] : ontology schema file
@@ -36,18 +36,22 @@ This repository is related to my thesis' work, which has the purpose to verify t
   ```
   The "merge" function is useful if you need to consider more datasets that are linked together.
   
-  All the files generated with JavaReasoner must be put in the same folder hierarchy as the dataset folders already available.
+  All the files generated with JavaReasoner must be put in the same folder hierarchy as the datasets' folders already available.
   In order to generate the remaining files needed, please execute in this order those other scipts:
-  1. linkedDataUtils2
-  2. dbpediaUtils2
+  1. linkedDataUtils.cpp
+        - it is necessary to associate to every entity and relation an id, and to generate training set, validation set and test set.
+  2. dbpediaUtils.cpp
+        - it is necessary to associate every entity to the classes which it belongs to, and to associate the range and the domain of every relation to the corrisponding ids.
   3. n-n.py
-  4. linkedDataUtils
+        - it is necessary to distinguish the different types of relations: 1-to-1, 1-to-n, n-to-1, n-n.
+  4. false2id.cpp
+        - it is necessary to generate the false triples for the Triple Classification task, it uses the criterion described in [3].
   
   <strong>Note</strong>: if the program is using multithread features compile it as: g++ myfile.cpp -o myfile -pthread -O3 -march=native <br/>
   
  Your new dataset is ready.
- Train the TransE model for initializing the embedding vectors.In this way, you will avoid overfitting.
- Train the model you prefer, specifying your dataset folder.If the model is a HRS variant, execute the k-means script. 
+ Train the TransE model for initializing the embedding vectors.In this way, you will avoid overfitting as stated in [2].
+ Train the model you prefer, specifying your dataset folder.If the model is a HRS variant, execute first the k-means.cpp script. 
  Execute the test you want,choose between:
  
   - Triple Classification without the <em>typeOf</em> relation
@@ -55,10 +59,12 @@ This repository is related to my thesis' work, which has the purpose to verify t
   - Link Prediction without the <em>typeOf</em> relation
   - Link Prediction with only the <em>typeOf</em> relation
   - Link Prediction with all the relations
+    
+ For a better understanding of the tests' structure, please refer to [1] and to [8].
+ In the "Graphs_Charts" folder you will find all the results from every test organized in a tabular form such as:
+ ![](Graphs_Charts/Screenshot_20200830_183333.png)
   
-  For a better understanding of the tests' structure, please refer to [1] and to [8].
-  
-  ### Code contribution
+  ### Code contributions
   https://github.com/aditya1601/kmeans-clustering-cpp     <br/>
   Giovanni Sansaro   [3]                                     <br/>
   https://github.com/thunlp/Fast-TransX                   <br/>
