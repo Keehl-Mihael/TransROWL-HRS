@@ -63,7 +63,7 @@ This repository is related to my thesis' work, which has the purpose to verify t
   - Link Prediction with only the <em>typeOf</em> relation
   - Link Prediction with all the relations
     
- For a better understanding of the tests' structure, please refer to [1] and to [8].
+ For a better understanding of the tests' structure, please refer to [1] and to [8]. If you are testing on dataset "DBpedia15K" or "DBpedia100K" use the "K" variant of the models due to different formatting of the datasets' files.<br/>
  In the "Graphs_Charts" folder you will find all the results from every test organized in a tabular form such as:
  ![](Graphs_Charts/Screenshot_20200830_183333.png)
   
