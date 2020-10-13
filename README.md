@@ -20,30 +20,7 @@ This repository is related to my thesis' work, which has the purpose to verify t
   ![](Graphs_Charts/Screenshot_20200901_160227.png)
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
   
-  
-  ### Mathematical Formulation
-  
-  - <b>TransROWL</b><br/>
-  <img src="Models/h_r.png" width="150"><br/>
-  <img src="Models/t_r.png" width="150"><br/>
-  <img src="Models/f_rr.png" width="400"><br/>
-  <img src="Models/f_typeof.png" width="400"><br/>
-  ![](Models/TransROWL.png)
-  - <b>TransROWL<sup>R</sup></b><br/>
-  <img src="Models/h_r.png" width="150"><br/>
-  <img src="Models/t_r.png" width="150"><br/>
-  <img src="Models/f_rr.png" width="400"><br/>
-  ![](Models/TransROWLR.png)
-  - <b>TransROWL-HRS</b><br/>
-  <img src="Models/h_r.png" width="150"><br/>
-  <img src="Models/t_r.png" width="150"><br/>
-  <img src="Models/f_top.png" width="400"><br/>
-  <img src="Models/L_Total.png" width="300"><br/>
-  <img src="Models/L_HRS_top.png" width="400"><br/>
-  ![](Models/L_Orig.png)
-  
-  
-  
+
   ### Instructions
   The JavaReasoner folder contains a java program which is able to generate,using a reasoner on a given dataset, all the files necessary to run the tests.
   The JavaReasoner makes use of the Apache Jena Framework, more informations at https://jena.apache.org/getting_started/index.html .
@@ -136,6 +113,27 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   - Λ<sub>4</sub>=0.01
   - Λ<sub>c</sub>=0.00001
   - Λ<sub>r</sub>=0.0001
+  
+  ### Mathematical Formulation
+  
+  - <b>TransROWL</b><br/>
+  <img src="Models/h_r.png" width="150"><br/>
+  <img src="Models/t_r.png" width="150"><br/>
+  <img src="Models/f_rr.png" width="400"><br/>
+  <img src="Models/f_typeof.png" width="400"><br/>
+  ![](Models/TransROWL.png)
+  - <b>TransROWL<sup>R</sup></b><br/>
+  <img src="Models/h_r.png" width="150"><br/>
+  <img src="Models/t_r.png" width="150"><br/>
+  <img src="Models/f_rr.png" width="400"><br/>
+  ![](Models/TransROWLR.png)
+  - <b>TransROWL-HRS</b><br/>
+  <img src="Models/h_r.png" width="150"><br/>
+  <img src="Models/t_r.png" width="150"><br/>
+  <img src="Models/f_top.png" width="400"><br/>
+  <img src="Models/L_Total.png" width="300"><br/>
+  <img src="Models/L_HRS_top.png" width="400"><br/>
+  ![](Models/L_Orig.png)
   
   ### Code contributions
   https://github.com/aditya1601/kmeans-clustering-cpp     <br/>
