@@ -20,6 +20,28 @@ This repository is related to my thesis' work, which has the purpose to verify t
   ![](Graphs_Charts/Screenshot_20200901_160227.png)
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
   
+  
+  ### Mathematical Formulation
+  
+  - <b>TransROWL</b>
+  <img src="Models/h_r.png" width="300"><br/>
+  <img src="Models/t_r.png" width="300"><br/>
+  <img src="Models/f_rr.png" width="400"><br/>
+  <img src="Models/f_typeof.png" width="400"><br/>
+  ![](Models/TransROWL.png)
+  - <b>TransROWL<sup>R</sup></b>
+  <img src="Models/h_r.png" width="300"><br/>
+  <img src="Models/t_r.png" width="300"><br/>
+  <img src="Models/f_rr.png" width="400"><br/>
+  ![](Models/TransROWLR.png)
+  - <b>TransROWL-HRS</b>
+  <img src="Models/L_Total.png" width="300"><br/>
+  <img src="Models/L_HRS_top.png" width="400"><br/>
+  ![](Models/L_Orig.png)
+  
+  
+  
+  ### Instructions
   The JavaReasoner folder contains a java program which is able to generate,using a reasoner on a given dataset, all the files necessary to run the tests.
   The JavaReasoner makes use of the Apache Jena Framework, more informations at https://jena.apache.org/getting_started/index.html .
   The JavaReasoner can be executed with those arguments:
@@ -64,6 +86,29 @@ This repository is related to my thesis' work, which has the purpose to verify t
   - Link Prediction with all the relations
     
  For a better understanding of the tests' structure, please refer to [1] and to [8]. If you are testing on dataset "DBpedia15K" or "DBpedia100K" use the "K" variant of the models due to different formatting of the datasets' files.<br/>
+ 
+  ### Example of a test
+  Let's suppose that we want to train and test a model, let's say <em>TransROWL-HRS</em>, on the dataset "data" with the ontology schema "schema". Here is what you need to do:
+  1. Run the main.java program in the folder JavaReasoner with the arguments :  ``` "schema" "data" "TURTLE" "equivalentClass"```. 
+  Repeat such command for every mode such as ```"equivalentProperty" "functionalProperty" "inverseOf"```.
+  2. Create a new folder "DATASET" for the dataset "data". Take every obtained file and place it with the same folder hierarchy of each other dataset such as "DBpedia15K".
+  3. Compile linkedDataUtils.cpp , dbpediaUtils.cpp and false2id.cpp with the command ``` g++ myfile.cpp -o myfile ``` (change the directory paths if necessary).
+  Execute these program in the following order : linkedDataUtils.cpp , dbpediaUtils.cpp , n-n.py , false2id.cpp.
+  4. Place every obtained file in the "DATASET" folder with the same folder hierarchy of each other dataset such as "DBpedia15K".
+  5. In order to train the model <emp>TransROWL-HRS</emp>, we first need to train TransE to obtain the embedding vectors to inizialize the vectors of <emp>TransROWL-HRS</emp>.
+  Let's train then TransE compiling his program with the following command ``` g++ myfile.cpp -o myfile -pthread -O3 -march=native ```  after changing the directory path to our dataset folder "DATASET". We can train the model in a parallel way specifing the number of threads before compiling.
+  6. Place the obtained files of the entity vectors and relation vectors in the dataset folder "DATASET".
+  7. Compile the program "kmeans.cpp" with the command ``` g++ myfile.cpp -o myfile ``` and run it with the entity vectors file and cluster's number as arguments.
+  8. Place the file "cluster.txt" in the same folder of <emp>TransROWL-HRS</emp> file.
+  9. Compile the model <emp>TransROWL-HRS</emp> with the command ``` g++ myfile.cpp -o myfile -pthread -O3 -march=native ```.
+  Run the model <emp>TransROWL-HRS</emp>.
+  10. Place the obtained files of the entity vectors, relation vectors and projection matrix in the dataset folder "DATASET".
+  11. Compile the test file you want to execute, let's consider the test of Link Prediction with only the <emp>typeOf</emp> relation.
+  Compile the test file "Link_Prediction_transR_TypeOf.cpp" with the command ``` g++ myfile.cpp -o myfile -pthread -O3 -march=native ```. Execute the program.
+  12. You will obtain the text file with the results.
+  13. If you want to execute a test of triple classification on the <emp>typeOf</emp> relation, use the file "triple_class_typeOf_ROWL_1000epoch.py".
+  14. You will obtain the text file with the results.
+ 
  In the "Graphs_Charts" folder you will find all the results from every test organized in a tabular form such as:
  ![](Graphs_Charts/Screenshot_20200830_183333.png)
   
@@ -76,23 +121,18 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   - epoch = 250 | 500 | 1000
 - TransROWL<sup>R</sup> Loss Function Parameters:
   - Λ<sub>1</sub>=Λ<sub>2</sub>=Λ<sub>3</sub>=Λ<sub>4</sub>=Λ<sub>5</sub>=Λ<sub>6</sub>=0.1
-  ![](Models/TransROWLR.png)
 - TransROWL Loss Function Parameters:
   - Λ<sub>1</sub>=1
   - Λ<sub>2</sub>=1
   - Λ<sub>3</sub>=0.1
   - Λ<sub>4</sub>=0.01
-  ![](Models/TransROWL.png)
 - TransROWL-HRS Loss Function Parameters:
   - Λ<sub>1</sub>=1
   - Λ<sub>2</sub>=1
   - Λ<sub>3</sub>=0.1
   - Λ<sub>4</sub>=0.01
   - Λ<sub>c</sub>=0.00001
-  - Λ<sub>r</sub>=0.0001<br/>
-  <img src="Models/L_Total.png" width="300"><br/>
-  <img src="Models/L_HRS_top.png" width="400"><br/>
-  ![](Models/L_Orig.png)
+  - Λ<sub>r</sub>=0.0001
   
   ### Code contributions
   https://github.com/aditya1601/kmeans-clustering-cpp     <br/>
