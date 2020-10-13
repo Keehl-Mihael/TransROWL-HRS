@@ -30,11 +30,14 @@ This repository is related to my thesis' work, which has the purpose to verify t
   <img src="Models/f_typeof.png" width="400"><br/>
   ![](Models/TransROWL.png)
   - <b>TransROWL<sup>R</sup></b><br/>
-  <img src="Models/h_r.png" width="300"><br/>
-  <img src="Models/t_r.png" width="300"><br/>
+  <img src="Models/h_r.png" width="150"><br/>
+  <img src="Models/t_r.png" width="150"><br/>
   <img src="Models/f_rr.png" width="400"><br/>
   ![](Models/TransROWLR.png)
   - <b>TransROWL-HRS</b><br/>
+  <img src="Models/h_r.png" width="150"><br/>
+  <img src="Models/t_r.png" width="150"><br/>
+  <img src="Models/f_top.png" width="400"><br/>
   <img src="Models/L_Total.png" width="300"><br/>
   <img src="Models/L_HRS_top.png" width="400"><br/>
   ![](Models/L_Orig.png)
