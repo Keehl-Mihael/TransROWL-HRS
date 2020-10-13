@@ -90,7 +90,7 @@ This repository is related to my thesis' work, which has the purpose to verify t
   14. You will obtain the text file with the results.
  
  In the "Graphs_Charts" folder you will find all the results from every test organized in a tabular form such as:
- ![](Graphs_Charts/Screenshot_20200830_183333.png)
+ ![](Graphs_Charts/Screenshot_20200901_155620.png)
   
 All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Classification" are obtained considering models trained with those settings:
 - Shared Settings:
