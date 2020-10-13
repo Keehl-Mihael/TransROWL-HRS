@@ -13,9 +13,9 @@ This repository is related to my thesis' work, which has the purpose to verify t
   
  The models developed, particularly <em>TransROWL</em> and <em>TransROWL-HRS AdaGrad</em>, achieve better performance in Link Prediction and Triple Classification:
   
-  - DBpedia100K
+  - DBpedia100K [10]
   ![](Graphs_Charts/Screenshot_20200901_161256.png)
-  - DBpedia15K
+  - DBpedia15K [11]
   ![](Graphs_Charts/Screenshot_20200901_161241.png)
   ![](Graphs_Charts/Screenshot_20200901_160227.png)
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
@@ -139,6 +139,8 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   https://github.com/aditya1601/kmeans-clustering-cpp     <br/>
   Giovanni Sansaro   [3]                                     <br/>
   https://github.com/thunlp/Fast-TransX                   <br/>
+  https://github.com/iieir-km/ComplEx-NNE_AER/tree/master/datasets/DB100K     <br/>
+  https://github.com/nle-ml/mmkb/tree/master/DB15K    <br/>
   
   ### Citations
   [1] Antoine Bordes et al. «Translating Embeddings for Modeling Multi-relational Data». In: Advances in Neural Information Processing Systems 26. A cura di C.J. C. Burges et al. Curran Associates, Inc., 2013, pp. 2787–2795. URL: http ://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf.<br/>
@@ -150,5 +152,9 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   [7] John Duchi, Elad Hazan e Yoram Singer. «Adaptive Subgradient Methods forOnline Learning and Stochastic Optimization». In:J. Mach. Learn. Res.12.null(lug. 2011), 2121–2159.ISSN: 1532-4435. <br/>
   [8] Richard Socher et al. «Reasoning With Neural Tensor Networks for Knowledge Base Completion». In: Advances in Neural Information Processing Systems 26.A cura di C. J. C. Burges et al. Curran Associates, Inc., 2013, pp. 926–934. URL :http://papers.nips.cc/paper/5028- reasoning- with- neural- tensor-networks-for-knowledge-base-completion.pdf. <br/>
   [9] Pasquale Minervini et al. «Regularizing Knowledge Graph Embeddings via Equivalence and Inversion Axioms». In: Machine Learning and Knowledge Discovery in Databases. A cura di Michelangelo Ceci et al. Vol. 10534. Cham: SpringerInternational Publishing, 2017, pp. 668–683. ISBN: 9783319712482 9783319712499.DOI : 10.1007/978-3-319-71249-9_40. URL : http://link.springer.com/10.1007/978-3-319-71249-9_40. <br/>
+  [10] Boyang Ding et al. «Improving Knowledge Graph Embedding Using Simple Constraints». In: Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). Melbourne, Australia: Association for Computational Linguistics, lug. 2018, pp. 110–121. DOI : 10.18653/v1/P18-1011. URL : https://www.aclweb.org/anthology/P18-1011.
+  [11] Ye Liu et al. MMKG: Multi-Modal Knowledge Graphs. 2019. arXiv: 1903.05485[cs.AI].
+
+
 
  
