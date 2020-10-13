@@ -67,6 +67,28 @@ This repository is related to my thesis' work, which has the purpose to verify t
  In the "Graphs_Charts" folder you will find all the results from every test organized in a tabular form such as:
  ![](Graphs_Charts/Screenshot_20200830_183333.png)
   
+All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Classification" are obtained considering models trained with those settings:
+- Shared Settings:
+  - learning rate = 0.001
+  - minibatch size = 50
+  - entity vector dimension = 100
+  - relation vector dimension = 100
+  - epoch = 250 | 500 | 1000
+- TransROWL<sup>R</sup>:
+  - Λ<sub>1</sub>=Λ<sub>2</sub>=Λ<sub>3</sub>=Λ<sub>4</sub>=Λ<sub>5</sub>=Λ<sub>6</sub>=0.1
+- TransROWL:
+  - Λ<sub>1</sub>=1
+  - Λ<sub>2</sub>=1
+  - Λ<sub>3</sub>=0.1
+  - Λ<sub>4</sub>=0.01
+- TransROWL-HRS:
+  - Λ<sub>1</sub>=1
+  - Λ<sub>2</sub>=1
+  - Λ<sub>3</sub>=0.1
+  - Λ<sub>4</sub>=0.01
+  - Λ<sub>c</sub>=0.00001
+  - Λ<sub>r</sub>=0.0001
+  
   ### Code contributions
   https://github.com/aditya1601/kmeans-clustering-cpp     <br/>
   Giovanni Sansaro   [3]                                     <br/>
