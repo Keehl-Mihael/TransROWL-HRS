@@ -91,7 +91,7 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   - Λ<sub>c</sub>=0.00001
   - Λ<sub>r</sub>=0.0001
   <img src="Models/L_Total.png" width="400">
-  <img src="Models/L_HRS.png" width="700">
+  <img src="Models/L_HRS_top.png" width="700">
   
   ![](Models/L_Orig.png)
   
