@@ -89,10 +89,9 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   - Λ<sub>3</sub>=0.1
   - Λ<sub>4</sub>=0.01
   - Λ<sub>c</sub>=0.00001
-  - Λ<sub>r</sub>=0.0001
-  <img src="Models/L_Total.png" width="200">
-  <img src="Models/L_HRS_top.png" width="300">
-  
+  - Λ<sub>r</sub>=0.0001<br/>
+  <img src="Models/L_Total.png" width="300"><br/>
+  <img src="Models/L_HRS_top.png" width="400"><br/>
   ![](Models/L_Orig.png)
   
   ### Code contributions
