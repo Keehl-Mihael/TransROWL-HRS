@@ -13,9 +13,9 @@ This repository is related to my thesis' work, which has the purpose to verify t
   
  The models developed, particularly <em>TransROWL</em> and <em>TransROWL-HRS AdaGrad</em>, achieve better performance in Link Prediction and Triple Classification:
   
-  - DBpedia100K [10]
+  - DBpedia100K [10] (The dataset has been modified compared to his original version [10])
   ![](Graphs_Charts/Screenshot_20200901_161256.png)
-  - DBpedia15K [11]
+  - DBpedia15K [11] (The dataset has been modified compared to his original version [11])
   ![](Graphs_Charts/Screenshot_20200901_161241.png)
   ![](Graphs_Charts/Screenshot_20200901_160227.png)
   ![](Graphs_Charts/Screenshot_20200901_160132.png)
@@ -141,6 +141,7 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   https://github.com/thunlp/Fast-TransX                   <br/>
   https://github.com/iieir-km/ComplEx-NNE_AER/tree/master/datasets/DB100K     <br/>
   https://github.com/nle-ml/mmkb/tree/master/DB15K    <br/>
+  (The datasets DB100K and DB15K have been modified compared to their original version [10] [11])
   
   ### Citations
   [1] Antoine Bordes et al. «Translating Embeddings for Modeling Multi-relational Data». In: Advances in Neural Information Processing Systems 26. A cura di C.J. C. Burges et al. Curran Associates, Inc., 2013, pp. 2787–2795. URL: http ://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf.<br/>
