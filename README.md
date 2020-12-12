@@ -66,7 +66,8 @@ This repository is related to my thesis' work, which has the purpose to verify t
   - Link Prediction with all the relations
     
  For a better understanding of the tests' structure, please refer to [1] and to [8]. If you are testing on dataset "DBpedia15K" or "DBpedia100K" use the "K" variant of the models due to different formatting of the datasets' files.<br/>
- <b>If you want the trained models used in this thesis, please send me an email at</b> csbackupandshare@gmail.com <br/>
+ <b>If you want the trained models used in this thesis, please use this drive link to download them </b> https://drive.google.com/drive/folders/1wI1_CVUcaq3Y-DtzaSd2e0RVjOTNiNsw?usp=sharing <br/>
+ <b>For any other request, please send me an email at</b> csbackupandshare@gmail.com <br/>
  
   ### Example of a test
   Let's suppose that we want to train and test a model, let's say <em>TransROWL-HRS</em>, on the dataset "data" with the ontology schema "schema". Here is what you need to do:
