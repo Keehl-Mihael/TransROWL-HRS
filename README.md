@@ -139,7 +139,7 @@ All the results in the folders "Graphs_Charts", "Link_Prediction" e "Triple_Clas
   
   ### Code contributions
   https://github.com/aditya1601/kmeans-clustering-cpp     <br/>
-  Giovanni Sansaro   [3]                                     <br/>
+  Giovanni Sansaro   [3]  (see Code_by_Sansaro.zip)                                   <br/>
   https://github.com/thunlp/Fast-TransX                   <br/>
   https://github.com/iieir-km/ComplEx-NNE_AER/tree/master/datasets/DB100K     <br/>
   https://github.com/nle-ml/mmkb/tree/master/DB15K    <br/>
